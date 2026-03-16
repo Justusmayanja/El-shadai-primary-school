@@ -1,5 +1,5 @@
 /**
- * El Shadai Primary School Kasubi — Shared JavaScript
+ * Kisugu Pre-Paratory School — Shared JavaScript
  * Kasubi, Kampala, Uganda | Nav, scroll effects, lightbox, carousel, dark mode, back-to-top
  */
 
@@ -69,7 +69,7 @@
   /* ========== Dark mode toggle ========== */
   const themeToggle = document.querySelector('.theme-toggle');
   const html = document.documentElement;
-  const STORAGE_KEY = 'elshadai-theme';
+  const STORAGE_KEY = 'immaculateheart-theme';
 
   function getStoredTheme() {
     try {
