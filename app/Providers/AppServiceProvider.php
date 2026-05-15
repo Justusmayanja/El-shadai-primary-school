@@ -22,7 +22,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         View::composer(
-            ['layouts.site', 'partials.site-footer', 'partials.site-nav'],
+            ['layouts.site', 'partials.site-footer', 'partials.site-nav', 'pages.*'],
             function ($view): void {
                 $view->with('site', SchoolSetting::forSite());
             }
