@@ -1,6 +1,6 @@
 <header class="nav" role="banner">
   <a href="{{ route('home') }}" class="nav__brand">
-    <img src="{{ asset('images/logo.svg') }}" alt="Real Quality Junior School logo" class="nav__logo" width="42" height="42">
+    <img src="{{ asset('images/logo.png') }}" alt="Real Quality Junior School logo" class="nav__logo" width="48" height="48">
     Real Quality Junior School
   </a>
   <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
