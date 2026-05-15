@@ -53,15 +53,15 @@
       </div>
       <div class="fade-in">
         <div class="contact-info-card">
-          <h3>📍 Address</h3>
+          <h3>Address</h3>
           <p>{!! nl2br(e($site->address ?? '')) !!}</p>
         </div>
         <div class="contact-info-card" style="margin-top: var(--space-lg);">
-          <h3>📞 Phone</h3>
+          <h3>Phone</h3>
           <p><a href="{{ $site->telHref() }}">{{ $site->phone }}</a></p>
         </div>
         <div class="contact-info-card" style="margin-top: var(--space-lg);">
-          <h3>✉️ Email</h3>
+          <h3>Email</h3>
           <p><a href="mailto:{{ $site->email }}">{{ $site->email }}</a></p>
         </div>
         @if($wa = $site->waMeUrl())

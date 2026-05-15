@@ -15,7 +15,19 @@ if (! function_exists('media_url')) {
             return $path;
         }
 
-        return Storage::disk('public')->url($path);
+        return asset('storage/'.ltrim($path, '/'));
+    }
+}
+
+if (! function_exists('normalize_image_upload_request')) {
+    /**
+     * Treat empty image URL fields as absent so file-only uploads validate correctly.
+     */
+    function normalize_image_upload_request(\Illuminate\Http\Request $request, string $urlKey = 'image_url'): void
+    {
+        if (! $request->filled($urlKey)) {
+            $request->merge([$urlKey => null]);
+        }
     }
 }
 

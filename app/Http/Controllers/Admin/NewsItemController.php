@@ -74,6 +74,8 @@ class NewsItemController extends Controller
 
     private function validateRequest(Request $request, bool $isCreate): void
     {
+        normalize_image_upload_request($request);
+
         $request->validate([
             'title' => ['required', 'string', 'max:255'],
             'slug' => ['nullable', 'string', 'max:255'],

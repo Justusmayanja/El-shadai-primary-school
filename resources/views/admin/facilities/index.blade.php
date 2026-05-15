@@ -19,7 +19,7 @@
         @forelse ($facilities as $facility)
           <tr>
             <td>@if($facility->image)<img src="{{ media_url($facility->image) }}" alt="" class="thumb" style="max-width:56px;max-height:56px;">@endif</td>
-            <td>{{ $facility->icon }} {{ $facility->title }}</td>
+            <td>{{ $facility->title }}</td>
             <td>{{ $facility->sort_order }}</td>
             <td>
               <a href="{{ route('admin.facilities.edit', $facility) }}">Edit</a>

@@ -61,6 +61,8 @@ class GalleryPhotoController extends Controller
 
     private function validateRequest(Request $request, bool $isCreate): void
     {
+        normalize_image_upload_request($request);
+
         $request->validate([
             'alt' => ['required', 'string', 'max:255'],
             'sort_order' => ['nullable', 'integer', 'min:0', 'max:65535'],

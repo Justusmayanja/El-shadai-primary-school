@@ -11,7 +11,7 @@
     <form method="post" action="{{ route('admin.facilities.store') }}" enctype="multipart/form-data">
       @csrf
       <label>Title <input type="text" name="title" value="{{ old('title') }}" required></label>
-      <label>Icon (emoji) <input type="text" name="icon" value="{{ old('icon', '🏫') }}" maxlength="8"></label>
+      <label>Icon label (optional, 1–3 letters) <input type="text" name="icon" value="{{ old('icon') }}" maxlength="3" placeholder="e.g. Lib"></label>
       <label>Description <textarea name="description" required>{{ old('description') }}</textarea></label>
       <label>Sort order <input type="number" name="sort_order" value="{{ old('sort_order', 0) }}" min="0"></label>
       <label>Image URL <input type="url" name="image_url" value="{{ old('image_url') }}" placeholder="https://…"></label>

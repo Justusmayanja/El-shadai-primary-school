@@ -24,19 +24,19 @@
           <a href="{{ $site->facebook_url }}" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
         @endif
         @if($wa = $site->waMeUrl())
-          <a href="{{ $wa }}" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">📱</a>
+          <a href="{{ $wa }}" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">WA</a>
         @endif
         @if($site->instagram_url)
           <a href="{{ $site->instagram_url }}" target="_blank" rel="noopener noreferrer" aria-label="Instagram">in</a>
         @endif
         @if($site->twitter_url)
-          <a href="{{ $site->twitter_url }}" target="_blank" rel="noopener noreferrer" aria-label="X">𝕏</a>
+          <a href="{{ $site->twitter_url }}" target="_blank" rel="noopener noreferrer" aria-label="X">X</a>
         @endif
         @if($site->youtube_url)
-          <a href="{{ $site->youtube_url }}" target="_blank" rel="noopener noreferrer" aria-label="YouTube">▶</a>
+          <a href="{{ $site->youtube_url }}" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YT</a>
         @endif
         @if($site->tiktok_url)
-          <a href="{{ $site->tiktok_url }}" target="_blank" rel="noopener noreferrer" aria-label="TikTok">♪</a>
+          <a href="{{ $site->tiktok_url }}" target="_blank" rel="noopener noreferrer" aria-label="TikTok">TT</a>
         @endif
       </div>
     </div>

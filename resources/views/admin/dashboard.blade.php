@@ -10,32 +10,26 @@
 
   <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;margin-bottom:1.5rem;">
     <a href="{{ route('admin.team-members.index') }}" class="admin-stat-card" style="text-decoration:none;color:inherit;">
-      <span class="admin-stat-card__icon" aria-hidden="true">👥</span>
       <span class="admin-stat-card__value">{{ $teamCount }}</span>
       <span class="admin-stat-card__label">Team members</span>
     </a>
     <a href="{{ route('admin.facilities.index') }}" class="admin-stat-card" style="text-decoration:none;color:inherit;">
-      <span class="admin-stat-card__icon" aria-hidden="true">🏫</span>
       <span class="admin-stat-card__value">{{ $facilityCount }}</span>
       <span class="admin-stat-card__label">Facilities</span>
     </a>
     <a href="{{ route('admin.gallery-photos.index') }}" class="admin-stat-card" style="text-decoration:none;color:inherit;">
-      <span class="admin-stat-card__icon" aria-hidden="true">🖼</span>
       <span class="admin-stat-card__value">{{ $galleryCount }}</span>
       <span class="admin-stat-card__label">Gallery photos</span>
     </a>
     <a href="{{ route('admin.news-items.index') }}" class="admin-stat-card" style="text-decoration:none;color:inherit;">
-      <span class="admin-stat-card__icon" aria-hidden="true">📰</span>
       <span class="admin-stat-card__value">{{ $newsCount }}</span>
       <span class="admin-stat-card__label">News items</span>
     </a>
     <a href="{{ route('admin.admission-applications.index') }}" class="admin-stat-card {{ $newApplications > 0 ? 'admin-stat-card--highlight' : '' }}" style="text-decoration:none;color:inherit;">
-      <span class="admin-stat-card__icon" aria-hidden="true">📋</span>
       <span class="admin-stat-card__value">{{ $newApplications }}</span>
       <span class="admin-stat-card__label">New applications</span>
     </a>
     <a href="{{ route('admin.contact-messages.index') }}" class="admin-stat-card {{ $unreadMessages > 0 ? 'admin-stat-card--highlight' : '' }}" style="text-decoration:none;color:inherit;">
-      <span class="admin-stat-card__icon" aria-hidden="true">✉️</span>
       <span class="admin-stat-card__value">{{ $unreadMessages }}</span>
       <span class="admin-stat-card__label">Unread messages</span>
     </a>

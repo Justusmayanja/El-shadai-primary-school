@@ -34,17 +34,17 @@
     </div>
     <div class="mvv-grid">
       <article class="mvv-card fade-in">
-        <div class="mvv-card__icon" aria-hidden="true">🎯</div>
+        <div class="mvv-card__icon" aria-hidden="true">M</div>
         <h3 class="mvv-card__title">Our Mission</h3>
         <p class="mvv-card__text">To provide a holistic, inclusive education that nurtures every child's academic, social, and emotional growth in a safe and caring environment.</p>
       </article>
       <article class="mvv-card fade-in">
-        <div class="mvv-card__icon" aria-hidden="true">🌟</div>
+        <div class="mvv-card__icon" aria-hidden="true">V</div>
         <h3 class="mvv-card__title">Our Vision</h3>
         <p class="mvv-card__text">To be the leading nursery and primary school in Wakiso, recognised for excellence in teaching, character development, and community impact.</p>
       </article>
       <article class="mvv-card fade-in">
-        <div class="mvv-card__icon" aria-hidden="true">💚</div>
+        <div class="mvv-card__icon" aria-hidden="true">I</div>
         <h3 class="mvv-card__title">Our Values</h3>
         <p class="mvv-card__text">Integrity, respect, creativity, and collaboration guide everything we do. We believe in partnership between school, parents, and the community.</p>
       </article>

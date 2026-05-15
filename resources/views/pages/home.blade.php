@@ -37,22 +37,22 @@
     </div>
     <div class="card-grid">
       <article class="feature-card fade-in">
-        <div class="feature-card__icon" aria-hidden="true">📚</div>
+        <div class="feature-card__icon" aria-hidden="true">H</div>
         <h3 class="feature-card__title">Holistic Education</h3>
         <p class="feature-card__text">We combine academic excellence with character building, creativity, and life skills so every child thrives in and out of the classroom.</p>
       </article>
       <article class="feature-card fade-in">
-        <div class="feature-card__icon" aria-hidden="true">🏠</div>
+        <div class="feature-card__icon" aria-hidden="true">S</div>
         <h3 class="feature-card__title">Safe &amp; Loving Environment</h3>
         <p class="feature-card__text">A secure, welcoming campus where children feel at home. We prioritise wellbeing and positive relationships between staff and pupils.</p>
       </article>
       <article class="feature-card fade-in">
-        <div class="feature-card__icon" aria-hidden="true">👩‍🏫</div>
+        <div class="feature-card__icon" aria-hidden="true">E</div>
         <h3 class="feature-card__title">Experienced Teachers</h3>
         <p class="feature-card__text">Our dedicated educators are qualified, caring, and committed to bringing out the best in every child through personalised attention.</p>
       </article>
       <article class="feature-card fade-in">
-        <div class="feature-card__icon" aria-hidden="true">⚽</div>
+        <div class="feature-card__icon" aria-hidden="true">C</div>
         <h3 class="feature-card__title">Co-curricular Activities</h3>
         <p class="feature-card__text">Sports, music, art, and clubs complement our curriculum and help children discover their passions and build confidence.</p>
       </article>

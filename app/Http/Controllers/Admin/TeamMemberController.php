@@ -67,6 +67,8 @@ class TeamMemberController extends Controller
 
     private function validateRequest(Request $request, bool $isCreate): void
     {
+        normalize_image_upload_request($request);
+
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'role' => ['required', 'string', 'max:255'],

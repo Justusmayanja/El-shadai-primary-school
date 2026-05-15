@@ -15,7 +15,7 @@
       @csrf
       @method('PUT')
       <label>Title <input type="text" name="title" value="{{ old('title', $facility->title) }}" required></label>
-      <label>Icon <input type="text" name="icon" value="{{ old('icon', $facility->icon) }}" maxlength="8"></label>
+      <label>Icon label (optional, 1–3 letters) <input type="text" name="icon" value="{{ old('icon', $facility->icon) }}" maxlength="3" placeholder="e.g. Lib"></label>
       <label>Description <textarea name="description" required>{{ old('description', $facility->description) }}</textarea></label>
       <label>Sort order <input type="number" name="sort_order" value="{{ old('sort_order', $facility->sort_order) }}" min="0"></label>
       <label>New image URL <input type="url" name="image_url" value="{{ old('image_url', str_starts_with((string) $facility->image, 'http') ? $facility->image : '') }}"></label>

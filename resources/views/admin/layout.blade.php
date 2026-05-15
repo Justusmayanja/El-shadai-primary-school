@@ -553,42 +553,33 @@
       <nav class="admin-sidebar__nav">
         <div class="admin-sidebar__label">Menu</div>
         <a href="{{ route('admin.dashboard') }}" class="admin-nav__link {{ request()->routeIs('admin.dashboard') ? 'is-active' : '' }}">
-          <span class="admin-nav__icon" aria-hidden="true">📊</span>
           Dashboard
         </a>
         <a href="{{ route('admin.team-members.index') }}" class="admin-nav__link {{ request()->routeIs('admin.team-members.*') ? 'is-active' : '' }}">
-          <span class="admin-nav__icon" aria-hidden="true">👥</span>
           Team
         </a>
         <a href="{{ route('admin.facilities.index') }}" class="admin-nav__link {{ request()->routeIs('admin.facilities.*') ? 'is-active' : '' }}">
-          <span class="admin-nav__icon" aria-hidden="true">🏫</span>
           Facilities
         </a>
         <a href="{{ route('admin.gallery-photos.index') }}" class="admin-nav__link {{ request()->routeIs('admin.gallery-photos.*') ? 'is-active' : '' }}">
-          <span class="admin-nav__icon" aria-hidden="true">🖼</span>
           Gallery
         </a>
         <a href="{{ route('admin.news-items.index') }}" class="admin-nav__link {{ request()->routeIs('admin.news-items.*') ? 'is-active' : '' }}">
-          <span class="admin-nav__icon" aria-hidden="true">📰</span>
           Latest news
         </a>
         <div class="admin-sidebar__label">Website</div>
         <a href="{{ route('admin.school-settings.edit') }}" class="admin-nav__link {{ request()->routeIs('admin.school-settings.*') ? 'is-active' : '' }}">
-          <span class="admin-nav__icon" aria-hidden="true">⚙️</span>
           Contact &amp; social
         </a>
         <a href="{{ route('admin.contact-messages.index') }}" class="admin-nav__link {{ request()->routeIs('admin.contact-messages.*') ? 'is-active' : '' }}">
-          <span class="admin-nav__icon" aria-hidden="true">✉️</span>
           Messages
         </a>
         <a href="{{ route('admin.admission-applications.index') }}" class="admin-nav__link {{ request()->routeIs('admin.admission-applications.*') ? 'is-active' : '' }}">
-          <span class="admin-nav__icon" aria-hidden="true">📋</span>
           Admissions
         </a>
       </nav>
       <div class="admin-sidebar__footer">
         <a href="{{ route('home') }}" class="admin-nav__link" target="_blank" rel="noopener noreferrer">
-          <span class="admin-nav__icon" aria-hidden="true">🌐</span>
           View website
         </a>
         <form action="{{ route('admin.logout') }}" method="post">

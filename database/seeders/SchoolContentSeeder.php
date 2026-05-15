@@ -25,10 +25,10 @@ class SchoolContentSeeder extends Seeder
         }
 
         $facilities = [
-            ['title' => 'Spacious Classrooms', 'icon' => '🏫', 'description' => 'Well-ventilated, well-lit classrooms with age-appropriate furniture and learning materials to support focused, comfortable learning.', 'image' => 'https://picsum.photos/seed/acad1/600/375', 'sort_order' => 1],
-            ['title' => 'Playground & Sports', 'icon' => '🛝', 'description' => 'Safe outdoor play areas and space for sports so children can run, play, and develop physical skills and teamwork.', 'image' => 'https://picsum.photos/seed/acad2/600/375', 'sort_order' => 2],
-            ['title' => 'Library', 'icon' => '📖', 'description' => 'A well-stocked library to encourage reading for pleasure and support research and independent learning.', 'image' => 'https://picsum.photos/seed/acad3/600/375', 'sort_order' => 3],
-            ['title' => 'Arts & Activity Spaces', 'icon' => '🎨', 'description' => 'Dedicated areas for art, music, and drama so every child can explore creativity and performance.', 'image' => 'https://picsum.photos/seed/acad4/600/375', 'sort_order' => 4],
+            ['title' => 'Spacious Classrooms', 'icon' => '', 'description' => 'Well-ventilated, well-lit classrooms with age-appropriate furniture and learning materials to support focused, comfortable learning.', 'image' => 'https://picsum.photos/seed/acad1/600/375', 'sort_order' => 1],
+            ['title' => 'Playground & Sports', 'icon' => '', 'description' => 'Safe outdoor play areas and space for sports so children can run, play, and develop physical skills and teamwork.', 'image' => 'https://picsum.photos/seed/acad2/600/375', 'sort_order' => 2],
+            ['title' => 'Library', 'icon' => '', 'description' => 'A well-stocked library to encourage reading for pleasure and support research and independent learning.', 'image' => 'https://picsum.photos/seed/acad3/600/375', 'sort_order' => 3],
+            ['title' => 'Arts & Activity Spaces', 'icon' => '', 'description' => 'Dedicated areas for art, music, and drama so every child can explore creativity and performance.', 'image' => 'https://picsum.photos/seed/acad4/600/375', 'sort_order' => 4],
         ];
         foreach ($facilities as $row) {
             Facility::query()->create($row);

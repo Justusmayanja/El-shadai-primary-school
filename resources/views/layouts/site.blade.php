@@ -19,15 +19,15 @@
     <div class="container nav-top__inner">
       @if($site->email)
       <span class="nav-top__item">
-        <a href="mailto:{{ $site->email }}">📧 {{ $site->email }}</a>
+        <a href="mailto:{{ $site->email }}">{{ $site->email }}</a>
       </span>
       @endif
       @if($site->address)
-      <span class="nav-top__item">📍 {{ $site->address }}</span>
+      <span class="nav-top__item">{{ $site->address }}</span>
       @endif
       @if($site->phone)
       <span class="nav-top__item">
-        <a href="{{ $site->telHref() }}">📞 {{ $site->phone }}</a>
+        <a href="{{ $site->telHref() }}">{{ $site->phone }}</a>
       </span>
       @endif
     </div>

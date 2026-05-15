@@ -27,7 +27,7 @@ class FacilityController extends Controller
         $this->validateRequest($request, true);
         Facility::query()->create([
             'title' => $request->input('title'),
-            'icon' => $request->input('icon', '🏫'),
+            'icon' => $request->input('icon', ''),
             'description' => $request->input('description'),
             'sort_order' => (int) $request->input('sort_order', 0),
             'image' => $this->resolveImage($request, null),
@@ -46,7 +46,7 @@ class FacilityController extends Controller
         $this->validateRequest($request, false);
         $facility->update([
             'title' => $request->input('title'),
-            'icon' => $request->input('icon', '🏫'),
+            'icon' => $request->input('icon', ''),
             'description' => $request->input('description'),
             'sort_order' => (int) $request->input('sort_order', 0),
             'image' => $this->resolveImage($request, $facility->image),
@@ -65,6 +65,8 @@ class FacilityController extends Controller
 
     private function validateRequest(Request $request, bool $isCreate): void
     {
+        normalize_image_upload_request($request);
+
         $request->validate([
             'title' => ['required', 'string', 'max:255'],
             'icon' => ['nullable', 'string', 'max:32'],

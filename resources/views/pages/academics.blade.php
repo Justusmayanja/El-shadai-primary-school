@@ -62,7 +62,6 @@
             <img src="{{ media_url($facility->image) }}" alt="{{ $facility->title }}" loading="lazy">
           </div>
           <div class="card__body">
-            <div class="card__icon" aria-hidden="true">{{ $facility->icon }}</div>
             <h3 class="card__title">{{ $facility->title }}</h3>
             <p class="card__text">{{ $facility->description }}</p>
           </div>
@@ -78,22 +77,22 @@
     </div>
     <div class="card-grid">
       <article class="feature-card fade-in">
-        <div class="feature-card__icon" aria-hidden="true">⚽</div>
+        <div class="feature-card__icon" aria-hidden="true">S</div>
         <h3 class="feature-card__title">Sports</h3>
         <p class="feature-card__text">Football, athletics, and other games help pupils stay active, build teamwork, and have fun. We participate in local school competitions.</p>
       </article>
       <article class="feature-card fade-in">
-        <div class="feature-card__icon" aria-hidden="true">🎵</div>
+        <div class="feature-card__icon" aria-hidden="true">M</div>
         <h3 class="feature-card__title">Music &amp; Dance</h3>
         <p class="feature-card__text">Choir, percussion, and traditional dance give children a chance to express themselves and celebrate culture.</p>
       </article>
       <article class="feature-card fade-in">
-        <div class="feature-card__icon" aria-hidden="true">🖌️</div>
+        <div class="feature-card__icon" aria-hidden="true">A</div>
         <h3 class="feature-card__title">Art &amp; Craft</h3>
         <p class="feature-card__text">Drawing, painting, and craft activities develop creativity and fine motor skills in a supportive setting.</p>
       </article>
       <article class="feature-card fade-in">
-        <div class="feature-card__icon" aria-hidden="true">📚</div>
+        <div class="feature-card__icon" aria-hidden="true">C</div>
         <h3 class="feature-card__title">Clubs</h3>
         <p class="feature-card__text">Reading club, science club, and debate club allow pupils to pursue interests and make friends beyond the classroom.</p>
       </article>
